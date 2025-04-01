@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto Play Sound</title>
+    <script>
+        function playSound() {
+            let audio = new Audio('https://memtag.github.io/e/'); // Можно заменить на свой звук
+            audio.volume = 1.0; // Устанавливает громкость на максимум
+            audio.play();
+        }
+
+        document.addEventListener('click', playSound, { once: true }); // Запускает звук при нажатии
+    </script>
+</head>
+<body>
+    <h2>Нажмите в любом месте, чтобы включить звук</h2>
+</body>
+</html>
